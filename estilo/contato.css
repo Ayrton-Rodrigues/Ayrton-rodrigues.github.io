@@ -1,0 +1,102 @@
+.contato { 
+    background-color: #000;
+   
+}
+.contato-container { 
+    max-width: 1100px;
+    padding: 120px 20px 60px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;     
+    margin: 0 auto;
+    gap: 100px;
+    align-items: center;
+    position: relative;
+}
+
+.contato-container::before { 
+    content: "";
+    width: 150px;
+    height: 140px;
+    background-image: url("../imagem/detalhe.svg");
+    position: absolute;
+    background-size: cover;
+    top: -70px;
+}
+
+ 
+.footer-texto { 
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.55;
+}
+.lista-contato { 
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: bold;
+
+}
+
+.lista-contato li { 
+    padding-bottom: 30px;
+}
+.lista-contato a { 
+    color: #ffffff;
+    text-decoration: underline;
+
+}
+
+.rodape { 
+    color: #a3a3a3;
+    font-size: 1.2rem;
+
+   
+}
+
+@media (max-width:800px) { 
+
+    .contato-container{ 
+        grid-template-columns: 1fr;
+        gap: 40px;     
+       
+    }
+
+
+    .contato-container::before { 
+        content: "";
+        width: 100px;
+        height: 100px;
+        background-image: url("../imagem/detalhe.svg");
+        position: absolute;
+        background-size: cover;
+        top: -50px;
+    }
+
+
+
+
+    .lista-contato { 
+        color: #ffffff;
+        font-size: 1.8rem;
+        font-weight: bold;
+    
+    }
+
+    .lista-contato li { 
+    padding-bottom: 10px;
+}
+    
+
+}
+
+
+/* Este é o código criado por mim a partir da visualização do conteúdo a ser feito. O próximo código ficará comentado com as orientações do professor. Servirá para estudo e comparação de onde ainda preciso ter atenção e cuidado na utilização correta dos comandos.
+
+
+
+foi observado  nesse código que poderia ter utilizado o grid-collumn 1 / -1 para que o elemento ocupasse todas a linha na qual ele estava.
+.rodape { 
+    color: #a3a3a3;
+    font-size: 1.2rem;
+   
+}
+*/
